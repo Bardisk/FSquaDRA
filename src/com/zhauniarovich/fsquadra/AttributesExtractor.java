@@ -106,7 +106,7 @@ public class AttributesExtractor {
 		Entry<String, Attributes> pair;
 		while (it.hasNext()) {
 			pair = it.next();
-			fileHashMap.put(pair.getKey().toString(), pair.getValue().getValue("SHA1-Digest"));
+			fileHashMap.put(pair.getKey().toString(), pair.getValue().getValue("SHA256-Digest"));
 		}
 
 		return fileHashMap;
